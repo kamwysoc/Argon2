@@ -1,4 +1,5 @@
 import Foundation
+import phc_winner_argon2
 
 public enum Argon2 {
     public enum Error: LocalizedError, Equatable {
