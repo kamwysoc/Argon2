@@ -8,25 +8,32 @@ let argonCTarget: Target = .target(name: "phc-winner-argon2",
                                    dependencies: [],
                                    path: "phc-winner-argon2",
                                    exclude: [
-                                    "README.md",
-                                    "man",
+                                    "kats",
+                                    "vs2015",
+                                    "latex",
+                                    "libargon2.pc.in",
+                                    "export.sh",
+                                    "appveyor.yml",
+                                    "Argon2.sln",
                                     "argon2-specs.pdf",
                                     "CHANGELOG.md",
-                                    "vs2015",
-                                    "src/blake2/blamka-round-opt.h"
+                                    "LICENSE",
+                                    "Makefile",
+                                    "man",
+                                    "README.md",
+                                    "src/bench.c",
+                                    "src/genkat.c",
+                                    "src/opt.c",
+                                    "src/run.c",
+                                    "src/test.c"
                                    ],
                                    sources: [
-                                    "src"
-//                                    "phc-winner-argon2/src/argon2.c'",
-//                                    "phc-winner-argon2/src/core.{c,h}'",
-//                                    "phc-winner-argon2/src/thread.{c,h}'",
-//                                    "phc-winner-argon2/src/encoding.{c,h}'",
-//                                    "phc-winner-argon2/src/blake2/blake2.h'",
-//                                    "phc-winner-argon2/src/blake2/blake2b.c'",
-//                                    "phc-winner-argon2/src/blake2/blake2-imp.h",
-//                                    "phc-winner-argon2/include/**/*.h",
-//                                    "phc-winner-argon2/src/ref.c",
-//                                    "phc-winner-argon2/src/blake2/blamka-round-ref.h"
+                                    "src/blake2/blake2b.c",
+                                    "src/argon2.c",
+                                    "src/core.c",
+                                    "src/encoding.c",
+                                    "src/ref.c",
+                                    "src/thread.c"
                                    ],
                                    publicHeadersPath: "include"
 )
