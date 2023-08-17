@@ -34,15 +34,16 @@ let argonCTarget: Target = .target(name: "phc-winner-argon2",
                                     "src/encoding.c",
                                     "src/ref.c",
                                     "src/thread.c"
-                                   ],
-                                   publicHeadersPath: "include"
+                                   ]
+//                                   publicHeadersPath: "include"
 )
 
 let mainTarget: Target = .target(name: "SignalArgon2",
                                  dependencies: ["phc-winner-argon2"],
                                  exclude: [],
-                                 linkerSettings: [.linkedLibrary("phc-winner-argon2",
-                                    .when(platforms: [.iOS]))])
+                                 linkerSettings: [
+//                                    .linkedLibrary("phc-winner-argon2", .when(platforms: [.iOS])),
+                                 ])
 
 let testTarget: Target = .testTarget(name: "SignalArgon2Tests",
                                      dependencies: ["SignalArgon2"])
