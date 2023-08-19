@@ -13,3 +13,11 @@ obj
 /captures
 .externalNativeBuild
 .cxx
+
+### SwiftPackageManager ###
+Packages
+xcuserdata
+*.xcodeproj
+
+## User settings
+xcuserdata/
